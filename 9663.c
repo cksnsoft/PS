@@ -4,7 +4,8 @@ int N;
 int arr[15][15];
 int cnt = 0;
 
-int has_vicinity(int x, int y) {
+// 타일이 이미 존재하는 퀸의 경로에 있는지 확인하는 함수
+int is_in_path(int x, int y) {
   if (x>0) {
     if (arr[x-1][y] = 1) {
       return 1;
@@ -74,3 +75,5 @@ int main() {
 // [ \ \ \ \ \ ]
 
 // (0,0)에서 시작 -> (0,1) -> (0,N)
+
+// is_in_path를 어떻게 하면 잘 짤 수 있는지가 정말로 관건이다.
