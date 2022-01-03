@@ -40,7 +40,7 @@ int reset_array() {
 int process(int col) {
   if (col=0) {
     for(int i=0; i<N; i++) {
-      reset_array()
+      reset_array();
       arr[i][col] = 1;
       process(col+1);
     }
@@ -50,7 +50,7 @@ int process(int col) {
   }
   else {
     for (int i=0; i<N; i++) {
-      if (!has_vicinity(i, col)) {
+      if (!is_in_path(i, col)) {
         continue;
       }
       else {
