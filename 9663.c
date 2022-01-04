@@ -14,64 +14,62 @@ int tile_is_out(int m, int n) {
 }
 
 // 주어진 index가 이미 존재하는 퀸의 경로에 있는지 확인하는 함수
-int is_in_path(int I, int J) {
-  printf("check is in path");
+int is_in_path(int row, int col) {
   int m; int n;
-  m = I; n = J;
+  m = row; n = col;
   while (1) {
     m -= 1;
     if (tile_is_out(m, n)) break;
-    printf("1");
-    if (arr[m][n] = 1) return 1;
+    if (arr[m][n] == 1) return 1;
   }
 
-  m = I; n = J;
+  m = row; n = col;
   while (1) {
     m -= 1; n += 1;
     if (tile_is_out(m, n)) break;
-    if (arr[m][n] = 1) return 1;
+    if (arr[m][n] == 1) return 1;
   }
 
-  m = I; n = J;
+  m = row; n = col;
   while (1) {
     n += 1;
     if (tile_is_out(m, n)) break;
-    if (arr[m][n] = 1) return 1;
+    if (arr[m][n] == 1) return 1;
   }
 
-  m = I; n = J;
+  m = row; n = col;
   while (1) {
     m += 1; n += 1;
     if (tile_is_out(m, n)) break;
-    if (arr[m][n] = 1) return 1;
+    if (arr[m][n] == 1) return 1;
   }
 
-  m = I; n = J;
+  m = row; n = col;
   while (1) {
     m += 1;
     if (tile_is_out(m, n)) break;
-    if (arr[m][n] = 1) return 1;
+    if (arr[m][n] == 1) return 1;
   }
 
-  m = I; n = J;
+  m = row; n = col;
   while (1) {
     m += 1; n -= 1;
     if (tile_is_out(m, n)) break;
-    if (arr[m][n] = 1) return 1;
+    if (arr[m][n] == 1) return 1;
   }
 
-  m = I; n = J;
+  m = row; n = col;
   while (1) {
     n -= 1;
     if (tile_is_out(m, n)) break;
-    if (arr[m][n] = 1) return 1;
+    if (arr[m][n] == 1) return 1;
   }
 
-  m = I; n = J;
+  m = row; n = col;
   while (1) {
     m -= 1; n -= 1;
     if (tile_is_out(m, n)) break;
-    if (arr[m][n] = 1) return 1;
+    if (arr[m][n] == 1) return 1;
   }
 
   return 0;
@@ -95,14 +93,12 @@ void process(int col) {
     }
   }
   else {
-    printf("%d", col);
     for (int i=0; i<N; i++) {
       reset_array(col);
       if (is_in_path(i, col)) {
         continue;
       }
       else {
-        printf("right here");
         arr[i][col] = 1;
         process(col+1);
       }
@@ -113,7 +109,7 @@ void process(int col) {
 int main() {
   scanf("%d", &N);
   process(0);
-  // printf("%d", cnt);
+  printf("%d", cnt);
 }
 
 // [ \ \ \ \ \ ]

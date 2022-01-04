@@ -1,1 +1,2 @@
-https://stackoverflow.com/a/65006472
+## 개요
+CMakeLists.txt, /.idea, /cmake-build-debug are all CLion stuff.
