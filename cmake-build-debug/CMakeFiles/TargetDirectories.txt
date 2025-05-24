@@ -1,3 +1,0 @@
-C:/Users/chanu/Documents/Baekjoon/cmake-build-debug/CMakeFiles/N-Queen.dir
-C:/Users/chanu/Documents/Baekjoon/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/chanu/Documents/Baekjoon/cmake-build-debug/CMakeFiles/rebuild_cache.dir
