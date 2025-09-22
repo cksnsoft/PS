@@ -36,3 +36,6 @@ out/
 *.tmp
 *.swp
 *.swo
+
+# 자바 파일
+*.class
