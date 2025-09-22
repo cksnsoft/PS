@@ -1,1 +1,38 @@
+# CLion/JetBrains IDE 관련
+.idea/
+!.idea/codeStyles
+!.idea/runConfigurations
+!.idea/inspectionProfiles
+!.idea/fileTemplates
+!.idea/*.iml
+
+# 사용자별 파일/폴더
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/dictionaries
+.idea/shelf
+
+# 빌드 디렉터리
+cmake-build-*/
+build/
+out/
+
+# 컴파일 결과물
+*.o
+*.obj
+*.so
+*.dll
+*.exe
 *.out
+*.app
+*.a
+*.lib
+*.dylib
+*.pch
+*.gch
+
+# 기타 임시 파일
+*.log
+*.tmp
+*.swp
+*.swo
