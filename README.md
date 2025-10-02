@@ -6,5 +6,5 @@ I only post the raw source code!
 Organized by year!
 
 Tags:
-BOJ - https://www.acmicpc.net/
-GL - https://level.goorm.io/
+B: Baekjoon Online Judge - https://www.acmicpc.net/
+G: - https://level.goorm.io/
