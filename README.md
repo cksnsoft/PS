@@ -1,5 +1,5 @@
 ## About
-PSCJCP: Problem Solving with C, Java, Cpp, Python
+PS: Problem Solving with C/Cpp, Java, Python, etc
 
 I only post the raw source code!
 
